@@ -1,3 +1,5 @@
+const cardsContainer = document.getElementById("card");
+const dbRef = firebase.database().ref().child("users");
 const ctx = document.getElementById('myChart').getContext('2d');
 const chart = new Chart(ctx, {
     // The type of chart we want to create
@@ -24,3 +26,7 @@ const chart = new Chart(ctx, {
     // Configuration options go here
     options: {}
 });
+
+dbRef.on("child_added", snap => console.log(snap.val()));
+
+
