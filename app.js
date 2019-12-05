@@ -13,11 +13,11 @@ const chart = new Chart(ctx, {
         },
         {
             label: 'Evening',
-            borderColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(20, 232, 55)',
             data: [10, 20, 25, 22, 30, 40, 35]
         },{
             label: 'Night',
-            borderColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(31, 96, 193)',
             data: [20, 18, 15, 32, 26, 19, 25]
         }]
     },
