@@ -35,6 +35,7 @@ Departamento de Recursos Humanos de BOSCH.
 El usuario requiere una herramienta para visualizar la información de una base de datos ya existente.
 
 **DoD**
+- Crear base de datos ficticia
 - Crear interfaz donde se visualizará la información
 - Vincular la base de datos a la interfaz
 - Visualizar la base de datos en la interfaz
