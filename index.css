@@ -1,0 +1,16 @@
+#colorBosch{
+    background-size: cover;
+    width: 100vw;
+    position: center;
+
+    display: flex;
+}
+#nameBosch{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#employes{
+    
+}
