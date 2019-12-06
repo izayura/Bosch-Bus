@@ -106,7 +106,7 @@ function initMap() {
 dbRef.on('child_added', (snap) => {
 	cardsContainer.innerHTML += `<div id="info">
         <h3>${snap.val().Name}</h3>
-        <p>CheckIn Time: ${snap.val().CheckIn}</p>
+        <p>Hora de CheckIn: ${snap.val().CheckIn}</p>
         </div>`;
 });
 
@@ -119,7 +119,7 @@ idSelector.forEach(function(id) {
 			if (snap.val().Location === id) {
 				cardsContainer.innerHTML += `<div id="info">
                         <h3>${snap.val().Name}</h3>
-                        <p>CheckIn Time: ${snap.val().CheckIn}</p>
+                        <p>Hora  de CheckIn: ${snap.val().CheckIn}</p>
                         </div>`;
 			}
 		});
