@@ -17,8 +17,16 @@
 
 <body>
     <header>
-        <img id="colorBosch" src="https://www.bosch-presse.de/pressportal/de/media/res/gfx/supergraphic.svg" />
-        <img id="nameBosch" src="./images/boschlogoname.jpeg" />
+
+            <img id="colorBosch" src="https://www.bosch-presse.de/pressportal/de/media/res/gfx/supergraphic.svg"/>
+            <img id="nameBosch" src="./images/boschlogoname.jpeg"/>
+            <nav id="menuNav">
+                <ul>
+                    <li id="morning">Morning</li>
+                    <li id="evening">Evening</li>
+                    <li id="night">Night</li>
+                </ul>
+            </nav>
     </header>
 
     <section class='graphic'>
@@ -35,15 +43,16 @@
                     <option value="value3">Nocturno</option>
             </select> -->
             <div class="row">
-                <div class="column">
-                    <!-- <button id="showButton">Mostrar</button> -->
-                    <div id="card">
-                        <!--  <h3>Card 1</h3>
+              
+                    <div class="column">
+                        <!-- <button id="showButton">Mostrar</button> -->
+                      <pre id="card">
+                     <!--  <h3>Card 1</h3>
                         <p>Some text</p>
                         <p>Some text</p> -->
-                        <div>
-
-                        </div>
+                     </pre> 
+                 </div>
+            </div>
 
         </section>
         <section id="sectionMap">
@@ -58,9 +67,10 @@
         <!-- Add Firebase products that you want to use -->
         <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
         <script src="firebase.js"></script>
+
         <script src="app.js"></script>
         <script src="index.js"></script>
-
+    </section>
 </body>
 
 </html>

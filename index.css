@@ -1,4 +1,13 @@
-.graphic {
+#menuNav ul{
+  text-align: center; 
+}
+#menuNav li{
+    display:inline;
+    padding-left:2%;
+    padding-right:2%;
+}
+.graphic{
+
     display: absolute;
     justify-content: right;
     float: right;
@@ -80,3 +89,4 @@ footer {
     height: 50px;
     background-color: black;
 }
+
