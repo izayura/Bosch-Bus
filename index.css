@@ -19,7 +19,7 @@ header{
 }
 #nameBosch {
     display: flex;
-    margin-left: 595px;
+    left:150px;
     margin-top: 50px;
     width: 50%;
 }
@@ -59,7 +59,7 @@ header{
     float: right;
     width: 70%;
     right: 0;
-    top: 32%;
+    top: 35%;
 }
 #sectionMap, #graphic {
     min-height: 100%;
