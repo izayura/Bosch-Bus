@@ -1,6 +1,7 @@
 html, body{
     width: 100%;
     display: flex;
+    background-color: white;
 }
 header{
     width: 100%; 
@@ -25,9 +26,12 @@ header{
 #menuNav{
     justify-content: space-between;
     text-align: center; 
+    background-color: white;
 }
 #menuNav button{
     display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
     padding-left:2%;
     padding-right:2%;
         color: rgba(255, 255, 255, 0.9) !important;
@@ -66,45 +70,36 @@ header{
     justify-content: right;
     align-content: center;
     float: left;
-    width: 70%;
+    width: 100%;
     left: 0;
     padding-top: 20%;
 }
-
 .chartjs-render-monitor {
     height: 450px;
 }
-
-/*#myChart {
-    /* visibility: hidden; */
-    /* display: flex; */
-  /*  display: absolute !important;
-    justify-content: right !important;
-    float: right !important;
-    height: 460px !important;
-    /* width: 70% !important; */
-  /*  float: left !important;
-    /* height: 450px; */
-/*}
-
-/* section{
-    justify-content: space-around; 
-    display: inline-flex;
-
-} */
-
 #employes {
-    display: block;
+    display: relative;
     justify-content: right;
     align-content: center;
+    text-align: center;
     width: 30%;
     float: left;
-    top: 40%;
+    height: 426px;
+    top: 30%;
+    overflow-y: scroll;
 }
-footer {
-    margin-top: 50px;
-    width: 100%;
-    height: 50px;
-    background-color: black;
+#info{
+    display: flex;
+    float: left;
+    align-items: center;
+    width: 44%;
+    margin: 2%;
+    background-color: #80ff0018;
+    border: #7fff00;
+    border-style: solid;
+    font-size: smaller;
 }
-
+h3,p{
+display: inline-block;
+vertical-align: middle;
+}
