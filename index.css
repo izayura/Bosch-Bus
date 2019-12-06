@@ -7,22 +7,26 @@
     padding-right:2%;
 }
 .graphic{
-    
+
     display: absolute;
     justify-content: right;
     float: right;
     width: 70%;
-
-
 }
-.chartjs-render-monitor{
+
+button {
+    display: inline-flex;
+    position: absolute;
+    float: right;
+}
+
+.chartjs-render-monitor {
     height: 450px;
 }
 
-#myChart{
+#myChart {
     /* visibility: hidden; */
     /* display: flex; */
-    
     display: absolute !important;
     justify-content: right !important;
     float: right !important;
@@ -32,54 +36,57 @@
     /* height: 450px; */
 }
 
-
-#colorBosch{
+#colorBosch {
     background-size: cover;
     width: 100vw;
     position: center;
-
     display: flex;
 }
-#nameBosch{
+
+#nameBosch {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
+
+
 /* section{
     justify-content: space-around; 
     display: inline-flex;
 
 } */
 
-#employes{
+#employes {
     /* position: relative; */
     width: 20%;
     display: left;
     margin: 0%;
 }
-#navemployes{
+
+#navemployes {
     width: 20%;
     display: left;
 }
-#sectionMap{
+
+#sectionMap {
     /* display: relative;
     justify-content: center ; */
     width: 70%;
     height: 200%;
 }
-#mapGraphic{
+
+#mapGraphic {
     /* position: relative; */
     display: flex;
     /* position: fixed; */
     /* margin-inline-start: 2.4%; */
 }
 
-footer
-{
-    margin-top:50px;
-    width:100%;
-    height:50px;
-    background-color:black;
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
 }
 
