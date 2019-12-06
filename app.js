@@ -1,3 +1,4 @@
+// Your web app's Firebase configuration
 const ctx = document.getElementById('myChart').getContext('2d');
 const chart = new Chart(ctx, {
     // The type of chart we want to create
@@ -45,6 +46,5 @@ const chart = new Chart(ctx, {
       }
     })
   }
-
 
 renderChart(dataChar)*/
