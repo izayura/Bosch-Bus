@@ -139,7 +139,7 @@ información de las ubicaciones donde pasará el transporte
 
 Debido a los tiempos del Talent Fest se decidió tomar en cuenta los puntos 1,2 y 3, y dependiendo los avances que se tengan en el transcurso del mismo se decidiría trabajar en los puntos 4,5 y 6. Aun en caso de no poderlos implementar dentro del tiempo estipulado, serán incluidos en las Historias de Usuario para futuras iteraciones y mejoras de la interfaz.
 
-Durante el transcurso del resto del jueves y la madrugada del viernes se completaron en su totalidad las Historias de Usuario 1 y 2, mientras la Historia de Usuario 3 ya generaba una gráfica en base a un JSON de prueba y la Historia de Usuario 4 vinculaba el API de google maps para visualizar en la interfaz un mapa con coordenadas previamente establecidas. Adicionalmente se decidió dejar pausada la Historia de Usuario 5 y comenzó a trabajarse en la tecnología de Reconocimiento Facial y en darle un estilo con CSS a la interfaz ya creada con las Historias pasadas.
+Durante el transcurso del resto del jueves y la madrugada del viernes se completaron en su totalidad las Historias de Usuario 1 y 2 creando un JSON ficticio, importándolo a Firebase y vinculando el mismo al proyecto para su manipulación, mientras la Historia de Usuario 3 ya generaba una gráfica en base a un JSON de prueba y la Historia de Usuario 4 vinculaba el API de google maps para visualizar en la interfaz un mapa con coordenadas previamente establecidas. Adicionalmente se decidió dejar pausada la Historia de Usuario 5 y comenzó a trabajarse en la tecnología de Reconocimiento Facial y en darle un estilo con CSS a la interfaz ya creada con las Historias pasadas.
 
 #### Interfaz de Recursos Humanos previa al feedback de las mentorías de viernes por la mañana
 ![Interfaz_Viernes](https://i.ibb.co/nskFr9p/interfaz-Pre.jpg)
@@ -150,7 +150,13 @@ Durante las sesiones de feedback del viernes por la mañana se mostró el avance
 
 - Los botones por los que se realiza el filtrado de turnos se encuentran en una ubicación que puede resultar confusa para el usuario, ya que solo esta filtrando la información del contenedor donde se imprimen las fichas, mismo que esta de lado izquierdo, y al encontrarse estos botones centrados parecería que también influían en el contenido de las gráficas
 
-- Agregar el número total de empleados en cada filtro realizado
-
 #### Todo el feedback recibido durante el Talent Fest se mantiene a la vista para consultarlo y poder tomar mejores decisiones
 ![Hoja_Feedback](https://i.ibb.co/hKwsQfN/IMG-20191206-122731.jpg)
+
+Durante el resto de la jornada de Hacking nos enfocamos en terminar el MVP con las mejoras mencionadas durante el Feedback recibido. Finalmente la demo final de nuestro proyecto es la siguiente:
+
+https://izayura.github.io/Bosch-Bus/
+
+Nuestras conclusiones son plantear como siguiente iteración la implementación de optimización de rutas evitando el sobrecupo, retrasos o puntos muertos, mejorando la manipulación de las bases de datos ya mostradas.
+
+Se plantea optimizar esta base de datos con la implementación de un sistema de registro de empleados que abordan las unidades, recolectando información verídica y constantemente actualizada, pudiendo así anticipar la toma de decisiones sobre la gestión del transporte.
