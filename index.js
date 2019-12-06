@@ -105,24 +105,23 @@ function initMap() {
 
 dbRef.on('child_added', (snap) => {
 	cardsContainer.innerHTML += `<div id="info">
-         <h3>${snap.val().Name}</h3>
-         <p>${snap.val().CheckIn}</p>
-         </div>`;
+        <h3>${snap.val().Name}</h3>
+        <p>CheckIn Time: ${snap.val().CheckIn}</p>
+        </div>`;
 });
 
 let idSelector = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25'];
 idSelector.forEach(function(id) {
-        console.log(id);
-        document.getElementById(id).addEventListener('click', () => {
-                cardsContainer.innerHTML = '';
-                dbRef.on('child_added', (snap) => {
-                        if (snap.val().Location === id ) {
-                                cardsContainer.innerHTML += `<div id="info">
+	console.log(id);
+	document.getElementById(id).addEventListener('click', () => {
+		cardsContainer.innerHTML = '';
+		dbRef.on('child_added', (snap) => {
+			if (snap.val().Location === id) {
+				cardsContainer.innerHTML += `<div id="info">
                         <h3>${snap.val().Name}</h3>
-                        <p>${snap.val().CheckIn}</p>
+                        <p>CheckIn Time: ${snap.val().CheckIn}</p>
                         </div>`;
-                        }
-                });
-        });
-	
+			}
+		});
+	});
 });

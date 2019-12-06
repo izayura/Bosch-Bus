@@ -1,110 +1,114 @@
-html, body{
-    width: 100%;
-    display: flex;
-    background-color: white;
+html,
+body {
+	width: 100%;
+	display: flex;
+	background-color: white;
 }
-header{
-    width: 100%; 
-    height: 20%;
+header {
+	width: 100%;
+	height: 20%;
 	left: 0;
 	top: 0;
-    position: fixed;
-    background-color: white;
+	position: fixed;
+	background-color: white;
+}
+select{
+font-size: large;
 }
 .colorBosch {
-    background-size: cover;
-    width: 100%;
-    position: center;
-    display: flex;
+	background-size: cover;
+	width: 100%;
+	position: center;
+	display: flex;
 }
 #nameBosch {
-    display: flex;
-    left:150px;
-    margin-top: 50px;
-    width: 50%;
+	display: flex;
+	left: 150px;
+	margin-top: 50px;
+	width: 50%;
 }
-#menuNav{
-    justify-content: space-between;
-    text-align: center; 
-    background-color: white;
+#menuNav {
+	justify-content: space-between;
+	text-align: center;
+	background-color: white;
 }
-#menuNav button{
-    display: inline-block;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    padding-left:2%;
-    padding-right:2%;
-        color: rgba(255, 255, 255, 0.9) !important;
-        font-size: 20px;
-        font-weight: 500;
-        padding: 0.5em 1.2em;
-        background: #318aac;
-        border: 2px solid;
-        border-color: #318aac;
-        position: absolute;
-        top: 75%;
-        right: 2%;
-        border-radius: 12px;
+#menuNav button {
+	display: inline-block;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	color: rgba(255, 255, 255, 0.9) !important;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 0.5em 1.2em;
+	background: #318aac;
+	border: 2px solid;
+	border-color: #318aac;
+	position: absolute;
+	top: 75%;
+	right: 2%;
+	border-radius: 12px;
 }
-    #menuNav button:hover {
-        color: rgba(255, 255, 255, 1) !important;
-        box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
-        transition: all 0.2s ease;
-    }
-#container{
-    display: block;
-    position: fixed;
-    justify-content: right;
-    align-content: center;
-    float: right;
-    width: 70%;
-    right: 0;
-    top: 35%;
+#menuNav button:hover {
+	color: rgba(255, 255, 255, 1) !important;
+	box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+	transition: all 0.2s ease;
 }
-#sectionMap, #graphic {
-    min-height: 100%;
-    min-width: 100%;
+#container {
+	display: block;
+	position: fixed;
+	justify-content: right;
+	align-content: center;
+	float: right;
+	width: 70%;
+	right: 0;
+	top: 35%;
 }
-#dataEmployes{
-    display: block;
-    justify-content: right;
-    align-content: center;
-    float: left;
-    width: 100%;
-    left: 0;
-    padding-top: 20%;
+#sectionMap,
+#graphic {
+	min-height: 100%;
+	min-width: 100%;
+}
+#dataEmployes {
+	display: block;
+	justify-content: right;
+	align-content: center;
+	float: left;
+	width: 100%;
+	left: 0;
+	padding-top: 20%;
 }
 
 #employes {
-    display: relative;
-    justify-content: right;
-    align-content: center;
-    text-align: center;
-    width: 30%;
-    float: left;
-    height: 426px;
-    top: 30%;
-    overflow-y: scroll;
+	display: relative;
+	justify-content: right;
+	align-content: center;
+	text-align: center;
+	width: 30%;
+	float: left;
+	height: 426px;
+	top: 30%;
+	overflow-y: scroll;
 }
-#info{
-    display: flex;
-    float: left;
-    align-items: center;
-    width: 44%;
-    margin: 2%;
-    background-color: #80ff0018;
-    border: #7fff00;
-    border-style: solid;
-    font-size: smaller;
+#info {
+	display: block;
+	float: left;
+	text-align: center;
+	width: 44%;
+	margin: 2%;
+	background-color: #80ff0018;
+	border: #7fff00;
+	border-style: solid;
+	font-size: smaller;
+	flex-wrap: wrap;
 }
-h3,p{
-display: inline-block;
-vertical-align: middle;
+h3,
+p {
+	display: inline-block;
+	vertical-align: middle;
 }
 #map {
-    margin-left: 20%;
+	margin-left: 20%;
 }
-
-
-

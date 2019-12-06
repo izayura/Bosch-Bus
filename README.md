@@ -150,7 +150,13 @@ Durante las sesiones de feedback del viernes por la mañana se mostró el avance
 
 - Los botones por los que se realiza el filtrado de turnos se encuentran en una ubicación que puede resultar confusa para el usuario, ya que solo esta filtrando la información del contenedor donde se imprimen las fichas, mismo que esta de lado izquierdo, y al encontrarse estos botones centrados parecería que también influían en el contenido de las gráficas
 
-- Agregar el número total de empleados en cada filtro realizado
-
 #### Todo el feedback recibido durante el Talent Fest se mantiene a la vista para consultarlo y poder tomar mejores decisiones
 ![Hoja_Feedback](https://i.ibb.co/hKwsQfN/IMG-20191206-122731.jpg)
+
+Durante el resto de la jornada de Hacking nos enfocamos en terminar el MVP con las mejoras mencionadas durante el Feedback recibido. Finalmente la demo final de nuestro proyecto es la siguiente:
+
+https://izayura.github.io/Bosch-Bus/
+
+Nuestras conclusiones son plantear como siguiente iteración la implementación de optimización de rutas evitando el sobrecupo, retrasos o puntos muertos, mejorando la manipulación de las bases de datos ya mostradas.
+
+Se plantea optimizar esta base de datos con la implementación de un sistema de registro de empleados que abordan las unidades, recolectando información verídica y constantemente actualizada, pudiendo así anticipar la toma de decisiones sobre la gestión del transporte.
