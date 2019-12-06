@@ -139,7 +139,7 @@ document.getElementById("morning").addEventListener("click", ()=>{
                 }                
             });
     })
-
+    
  document.getElementById("night").addEventListener("click", ()=>{
         cardsContainer.innerHTML="";
         dbRef.on("child_added", snap => {
