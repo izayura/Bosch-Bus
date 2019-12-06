@@ -1,3 +1,30 @@
+.graphic{
+    
+    display: absolute;
+    justify-content: right;
+    float: right;
+    width: 70%;
+
+
+}
+.chartjs-render-monitor{
+    height: 450px;
+}
+
+#myChart{
+    /* visibility: hidden; */
+    /* display: flex; */
+    
+    display: absolute !important;
+    justify-content: right !important;
+    float: right !important;
+    height: 460px !important;
+    /* width: 70% !important; */
+    float: left !important;
+    /* height: 450px; */
+}
+
+
 #colorBosch{
     background-size: cover;
     width: 100vw;
@@ -11,18 +38,14 @@
     margin-right: auto;
     width: 50%;
 }
-section{
+/* section{
     justify-content: space-around; 
     display: inline-flex;
 
-}
-.graphics{
-    
-    display: flex;
-    width: 100%;
-}
+} */
+
 #employes{
-    position: relative;
+    /* position: relative; */
     width: 20%;
     display: left;
     margin: 0%;
@@ -32,44 +55,18 @@ section{
     display: left;
 }
 #sectionMap{
-  
-    display: right;
-    
-    margin-right: 0;
-
+    /* display: relative;
+    justify-content: center ; */
+    width: 70%;
+    height: 200%;
 }
 #mapGraphic{
-    position: relative;
+    /* position: relative; */
     display: flex;
-    position: fixed;
-    margin-inline-start: 52.4%;
+    /* position: fixed; */
+    /* margin-inline-start: 2.4%; */
 }
-.column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-.column {
-    float: left;
-    padding: 0 10px;
-  }
-  
-  /* Remove extra left and right margins, due to padding */
-  .row {margin: 0 -5px;}
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+
   footer
   {
       margin-top:50px;
