@@ -32,14 +32,81 @@ button_block2.addEventListener('click', () => {
     
 });
 
+function initMap() {
+        // Creamos un objeto mapa y especificamos el elemento DOM donde se va a mostrar.
+        var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 21.967268, lng: -102.284398},
+        scrollwheel: false,
+        zoom: 9,
+        zoomControl: true,
+        rotateControl : false,
+        mapTypeControl: true,
+        streetViewControl: false,
+        });
+        // Creamos dos marcadores.
+ var marker1 = new google.maps.Marker({ 
+        position: {lat: 22.066937, lng: -102.271547},
+        draggable: false
+        });
+        var marker2 = new google.maps.Marker({
+        position: {lat: 21.878069, lng: -102.30299},
+        draggable: false
+        });
+        var marker3 = new google.maps.Marker({
+        position: {lat: 21.886840, lng: -102.27649},
+        draggable: false
+        });
+         var marker4 = new google.maps.Marker({
+         position: {lat: 21.867733, lng: -102.265584},
+         draggable: false
+        });
+        var marker5 = new google.maps.Marker({
+        position: {lat: 21.859985, lng: -102.275503},
+        draggable: false
+         });
+        var marker6 = new google.maps.Marker({
+        position: {lat: 22.012588, lng: -102.305131},
+        draggable: false
+        });
+        var marker7 = new google.maps.Marker({
+        position: {lat: 21.903337, lng: -102.299494},
+        draggable: false
+        });
+         var marker8 = new google.maps.Marker({
+         position: {lat: 21.881649, lng: -102.280347},
+         draggable: false
+        });
+        var marker9 = new google.maps.Marker({
+        position: {lat: 21.882354, lng: -102.269807},
+        draggable: false
+         });
+        var marker10 = new google.maps.Marker({
+        position: {lat: 21.943591, lng: -102.291598},
+        draggable: false
+         });
+
+
+        
+        
+        
+       // Le asignamos el mapa a los marcadores.
+       marker1.setMap(map);
+        marker2.setMap(map);
+        marker3.setMap(map);
+        marker4.setMap(map);
+        marker5.setMap(map);
+        marker6.setMap(map);
+        marker7.setMap(map);
+        marker8.setMap(map);
+        marker9.setMap(map);
+        marker10.setMap(map);
+       }
+
 dbRef.on("child_added", snap => {
-        // const li = document.createElement("li");
         cardsContainer.innerHTML +=
          `<h3>${snap.val().Name}</h3>
          <p>${snap.val().CheckIn}</p>
          <p>${snap.val().Location}</p>`
-        // li.innerText = snap.val().Name;
-        // cardsContainer.appendChild(li);
     });
     
 //     const showData = () => {
