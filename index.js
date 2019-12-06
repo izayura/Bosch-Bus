@@ -36,20 +36,48 @@ dbRef.on("child_added", snap => {
         // const li = document.createElement("li");
         cardsContainer.innerHTML +=
          `<h3>${snap.val().Name}</h3>
-         <p>${snap.val().CheckIn}</p>
+         <p id="hour">${snap.val().CheckIn}</p>
          <p>${snap.val().Location}</p>`
         // li.innerText = snap.val().Name;
         // cardsContainer.appendChild(li);
+        
     });
-    
-//     const showData = () => {
-//         usersArray = snap.val();
-//         usersArray.map(user => {
-//             cardsContainer.innerHTML+=
-//         `<h3>${user.Name}</h3>`
-//         });
-    
-//     showButton.addEventListener("click", showData);
-    
 
+document.getElementById("morning").addEventListener("click", ()=>{
+        cardsContainer.innerHTML="";
+        dbRef.on("child_added", snap => {
+                // const li = document.createElement("li");
+                if(snap.val().CheckIn==="6hr"){
+                cardsContainer.innerHTML +=
+                 `<h3>${snap.val().Name}</h3>
+                 <p id="hour">${snap.val().CheckIn}</p>
+                 <p>${snap.val().Location}</p>`
+                }                
+            });
+    })
 
+    document.getElementById("evening").addEventListener("click", ()=>{
+        cardsContainer.innerHTML="";
+        dbRef.on("child_added", snap => {
+                // const li = document.createElement("li");
+                if(snap.val().CheckIn==="14hr"){
+                cardsContainer.innerHTML +=
+                 `<h3>${snap.val().Name}</h3>
+                 <p id="hour">${snap.val().CheckIn}</p>
+                 <p>${snap.val().Location}</p>`
+                }                
+            });
+    })
+
+    document.getElementById("night").addEventListener("click", ()=>{
+        cardsContainer.innerHTML="";
+        dbRef.on("child_added", snap => {
+                // const li = document.createElement("li");
+                if(snap.val().CheckIn==="22hr"){
+                cardsContainer.innerHTML +=
+                 `<h3>${snap.val().Name}</h3>
+                 <p id="hour">${snap.val().CheckIn}</p>
+                 <p>${snap.val().Location}</p>`
+                }                
+            });
+    })
