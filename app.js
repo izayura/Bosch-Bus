@@ -9,6 +9,8 @@ const firebaseConfig = {
   };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);const app = firebase.app();
+let usersArray = [];
+const showButton = document.getElementById("showButton");
 const cardsContainer = document.getElementById("card");
 const dbRef = firebase.database().ref().child("users");
 const ctx = document.getElementById('myChart').getContext('2d');
@@ -38,6 +40,18 @@ const chart = new Chart(ctx, {
     options: {}
 });
 
-dbRef.on("child_added", snap => console.log(snap.val()));
+dbRef.on("child_added", snap => {
+    const li = document.createElement("li");
+    li.innerText = snap.val();
+    cardsContainer.appendChild(li);
+});
 
+// const showData = () => {
+//     usersArray = snap.val();
+//     usersArray.map(user => {
+//         cardsContainer.innerHTML+=
+//     `<h3>${user.Name}</h3>`
+//     });
+
+// showButton.addEventListener("click", showData);
 
