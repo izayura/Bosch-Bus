@@ -1,3 +1,5 @@
+const cardsContainer = document.getElementById("card");
+const buttonData = document.getElementById('showData');
 const ctx = document.getElementById('myChart').getContext('2d');
 const chart = new Chart(ctx, {
     // The type of chart we want to create
@@ -25,3 +27,14 @@ const chart = new Chart(ctx, {
     // Configuration options go here
     options: {}
 });
+
+console.log(buttonData);
+buttonData.addEventListener("click", ()=>{
+    console.log("Hasta aqui llega");
+   /* users.map(user=>{
+        cardsContainer.innerHTML+=
+    `<h3> ${user.Name}</h3>
+    <p>${user.CheckIn}</p>
+    <p>${user.Location}</p>`;
+    }) */
+} );
