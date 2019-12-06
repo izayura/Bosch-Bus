@@ -1,3 +1,14 @@
+// Your web app's Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyA7njoATlPyzGF60LsDfujCJZ1pKJiFjnQ",
+    authDomain: "bosch-bus.firebaseapp.com",
+    databaseURL: "https://bosch-bus.firebaseio.com",
+    projectId: "bosch-bus",
+    messagingSenderId: "222527960687",
+    appId: "1:222527960687:web:cd36b5877a7c224a707f9a",
+  };
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);const app = firebase.app();
 const cardsContainer = document.getElementById("card");
 const buttonData = document.getElementById('showData');
 const ctx = document.getElementById('myChart').getContext('2d');
