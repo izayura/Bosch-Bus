@@ -1,3 +1,27 @@
+document.getElementById('mapGraphic2').style.display = 'none';
+        document.getElementById('myChart').style.display = 'block';
+        document.getElementById('map').style.display = 'none';
+        document.getElementById('mapGraphic').style.display = 'block';
+
+let button_block2 = document.getElementById('mapGraphic2');
+button_block2.addEventListener('click', () => {
+        console.log(document.getElementById('myChart'))
+        document.getElementById('mapGraphic2').style.display = 'none';
+        document.getElementById('myChart').style.display = 'block';
+        document.getElementById('map').style.display = 'none';
+        document.getElementById('mapGraphic').style.display = 'block';
+});
+
+let button_block = document.getElementById('mapGraphic');
+button_block.addEventListener('click', () => {
+        console.log(document.getElementById('myChart'))
+        document.getElementById('myChart').style.display = 'none';
+        document.getElementById('map').style.display = 'block';
+        document.getElementById('mapGraphic').style.display = 'none';
+        document.getElementById('mapGraphic2').style.display = 'block';
+});
+
+
 const firebaseConfig = {
         apiKey: "AIzaSyA7njoATlPyzGF60LsDfujCJZ1pKJiFjnQ",
         authDomain: "bosch-bus.firebaseapp.com",
@@ -11,26 +35,7 @@ const firebaseConfig = {
     let usersArray = [];
     let dbRef = firebase.database().ref().child("users");
     const showButton = document.getElementById("showButton");
-    const cardsContainer = document.getElementById("card");
-    let button_block = document.getElementById('mapGraphic');
-    
-
-button_block.addEventListener('click', () => {
-   
-        document.getElementById('myChart').style.display = 'none';
-        document.getElementById('map').style.display = 'block';
-      
-    
-});
-let button_block2 = document.getElementById('mapGraphic');
-
-button_block2.addEventListener('click', () => {
-   
-        document.getElementById('myChart').style.display = 'none';
-        // document.getElementById('mapGraphic').style.display = 'none';
-      
-    
-});
+    const cardsContainer = document.getElementById("card");    
 
 function initMap() {
         // Creamos un objeto mapa y especificamos el elemento DOM donde se va a mostrar.
@@ -105,18 +110,45 @@ function initMap() {
 dbRef.on("child_added", snap => {
         cardsContainer.innerHTML +=
          `<h3>${snap.val().Name}</h3>
-         <p>${snap.val().CheckIn}</p>
+         <p id="hour">${snap.val().CheckIn}</p>
          <p>${snap.val().Location}</p>`
     });
-    
-//     const showData = () => {
-//         usersArray = snap.val();
-//         usersArray.map(user => {
-//             cardsContainer.innerHTML+=
-//         `<h3>${user.Name}</h3>`
-//         });
-    
-//     showButton.addEventListener("click", showData);
-    
 
+document.getElementById("morning").addEventListener("click", ()=>{
+        cardsContainer.innerHTML="";
+        dbRef.on("child_added", snap => {
+                // const li = document.createElement("li");
+                if(snap.val().CheckIn==="6hr"){
+                cardsContainer.innerHTML +=
+                 `<h3>${snap.val().Name}</h3>
+                 <p id="hour">${snap.val().CheckIn}</p>
+                 <p>${snap.val().Location}</p>`
+                }                
+            });
+    })
 
+    document.getElementById("evening").addEventListener("click", ()=>{
+        cardsContainer.innerHTML="";
+        dbRef.on("child_added", snap => {
+                // const li = document.createElement("li");
+                if(snap.val().CheckIn==="14hr"){
+                cardsContainer.innerHTML +=
+                 `<h3>${snap.val().Name}</h3>
+                 <p id="hour">${snap.val().CheckIn}</p>
+                 <p>${snap.val().Location}</p>`
+                }                
+            });
+    })
+
+ document.getElementById("night").addEventListener("click", ()=>{
+        cardsContainer.innerHTML="";
+        dbRef.on("child_added", snap => {
+                // const li = document.createElement("li");
+                if(snap.val().CheckIn==="22hr"){
+                cardsContainer.innerHTML +=
+                 `<h3>${snap.val().Name}</h3>
+                 <p id="hour">${snap.val().CheckIn}</p>
+                 <p>${snap.val().Location}</p>`
+                }                
+            });
+    })
